@@ -33,7 +33,7 @@ Ext.define('ExtMVC.controller.Contatos', {
         });
     },
 
-    editarContato: function(grid, record) {
+    editarContato: function(grid, record, item, index, e, eOpts) {
         var edit = Ext.create('ExtMVC.view.contato.Formulario').show();
         
         if(record){
