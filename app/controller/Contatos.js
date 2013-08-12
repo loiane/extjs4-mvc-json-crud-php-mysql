@@ -43,7 +43,7 @@ Ext.define('ExtMVC.controller.Contatos', {
     
     updateContato: function(button) {
         var win    = button.up('window'),
-            form   = win.down('form'),
+            form   = win.down('form')getForm(),
             record = form.getRecord(),
             values = form.getValues();
         
